@@ -1,0 +1,139 @@
+.mainContainer{
+    width: 100vw;
+    height: 750px;
+    background: url(assets/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dataContainer{
+    width: 50vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.dataContainer .dataHeader{
+    width: 100%;
+    background: white;
+}
+.controlButtons{
+    text-align: center;
+}
+.controlButtons button{
+    border: none;
+    border: none;
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 2.5px;
+    font-weight: bold;
+    margin: 1%;
+    background: rgba(0,0,0,0.3);
+}
+.controlButtons button:hover{
+    cursor: pointer;
+}
+.data{ 
+    width: 100%;
+    height: 100%;
+}
+.data .header{
+    display: flex;
+    width: 90%;
+    margin-left: 10%;
+}
+.data .header div{
+    width: 50%;
+    text-align: center;
+}
+.data .header div p{
+    
+}
+.data .body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    background: url('assets/bodybg.jpg');
+    background-size: cover;
+}
+.data .body .timeline{
+    width: 10%;
+    height: 100%;
+}
+.data .body .timeline div{
+    padding-top: 6rem;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 3px 3px 20px black;
+}
+.data .body .components{
+    width: 90%;
+    height:170%;
+    overflow-y: auto;
+}
+.data .body .components .item{
+    width: 95%;
+    height: 115px;
+    margin: 5rem auto;
+    display: flex;
+}
+.item .event{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    margin: 2.5%;
+    background: rgba(255,255,255,0.5);
+    height: fit-content;
+}
+.item .event .poster{
+    padding: 2.5%;
+}
+.item .event .poster img{
+  width:100px
+}
+.item .event .content{
+    width: 60%;
+    padding: 2.5%;
+    padding-left: 5%;
+}
+
+.content .eventTitle{
+
+}
+
+.content .eventTitle p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .eventTitle p,.content .info p{
+    margin: 0;
+}
+
+.content .info p{
+    font-size: 13px; 
+}
+
+.content .bookButton{
+    margin-top: 10px;
+}
+.content .bookButton button{
+    border: none;
+    border-radius: 2px;
+    width: 75px;
+    height: 20px;
+    background: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+.content .bookButton button:hover{
+   cursor: pointer;
+  
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
