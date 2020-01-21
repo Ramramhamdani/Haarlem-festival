@@ -1,15 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "festival";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
+function connection()
+{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "haarlem festival";
+    // Create connection
+    $conn = new mysqli($servername, $username, $password,$dbname);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
 }
+
 //echo "Connected successfully";
 ?>

@@ -17,7 +17,7 @@
 .controlButtons{
     text-align: center;
 }
-.controlButtons input{
+.controlButtons button{
     border: none;
     border: none;
     width: 7.5rem;
@@ -27,7 +27,7 @@
     margin: 1%;
     background: rgba(0,0,0,0.3);
 }
-.controlButtons input:hover{
+.controlButtons button:hover{
     cursor: pointer;
 }
 .data{ 
@@ -48,7 +48,7 @@
 }
 .data .body{
     width: 100%;
-    height: 76%;
+    height: 100%;
     display: flex;
     overflow-y: scroll;
     background: url('assets/bodybg.jpg');
@@ -68,16 +68,16 @@
 .data .body .components{
     width: 90%;
     height:170%;
-    margin-left: 10%;
+    overflow-y: auto;
 }
 .data .body .components .item{
-    width: 100%;
+    width: 95%;
     height: 115px;
-    margin: 4rem 0 0 -2rem;
+    margin: 5rem auto;
     display: flex;
 }
 .item .event{
-    width: 100%;
+    width: 50%;
     text-align: center;
     display: flex;
     margin: 2.5%;
@@ -101,7 +101,7 @@
 }
 
 .content .eventTitle p{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -136,42 +136,4 @@
 body{
     margin: 0;
     padding: 0;
-}
-.contactpage{
-}
-.contactpage .contactform{
-    display: flex;
-    height: 32rem;
-    width: 43%;
-    background-color: brown;
-    justify-content: center;
-    margin: 2% 0% 0% 30%;
-    border-radius: 2em;
-}
-.contactpage .contactform .box{
-    margin: 1%;
-}
-.contactpage .contactform #txtbx{
-    display: flex;
-    margin: 4%;
-    width: 100%;
-}
-.contactpage .credits{
-    background-color: aqua;
-
-}
-.sendbtn{
-    margin-left: 17%;
-    position: relative;
-    display: flex;
-    margin-top: 10%;
-    width: 10rem;
-    justify-content: center;
-    height: 2rem;
-    border-radius: 0.25rem;
-    background: cornflowerblue;
-    font-weight: bold;
-}
-.sendbtn:hover{
-    cursor: pointer;
 }
